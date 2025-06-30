@@ -8,8 +8,8 @@
 #ifndef INC_HCSR_04_H_
 #define INC_HCSR_04_H_
 
-#define STM32XXXX_HAL_HEADER_FILE "stm32f4xx_hal.h" //example "stm32g4xx_hal.h"
-#define STM32XXXX_HAL_TIM_HEADER_FILE "stm32f4xx_hal_tim.h" //example "stm32g4xx_hal_tim.h"
+#define STM32XXXX_HAL_HEADER_FILE "stm32f4xx_hal.h" //example, Use the appropriate header for your stm board
+#define STM32XXXX_HAL_TIM_HEADER_FILE "stm32f4xx_hal_tim.h" //example, Use the appropriate header for your stm board
 
 #include STM32XXXX_HAL_HEADER_FILE
 #include STM32XXXX_HAL_TIM_HEADER_FILE
@@ -30,6 +30,12 @@ typedef struct{
 	TIM_HandleTypeDef * _TIM;
 }HCSR04_InitTypeDef;
 
+/**
+  * @brief  Delay using hardware timer in microseconds.
+  * @param 	TIM handler for timer with frequency to count 1us.
+  * @param 	us amount of delay in microseconds.
+  * @retval None
+  */
 void HCSR04_DelayUs(TIM_HandleTypeDef * tim, uint16_t us);
 
 /**
