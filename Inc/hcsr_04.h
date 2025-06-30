@@ -30,6 +30,8 @@ typedef struct{
 	TIM_HandleTypeDef * _TIM;
 }HCSR04_InitTypeDef;
 
+void HCSR04_DelayUs(TIM_HandleTypeDef * tim, uint16_t us);
+
 /**
   * @brief  Intitalizes the HCSR04 Driver.
   * @param	HCSR instance of a HCSR04 driver.
@@ -47,7 +49,7 @@ void HCSR04_Init(
 		uint16_t _EchoPin,
 		uint16_t _TrigPin,
 		TIM_HandleTypeDef * _TIM
-	)
+	);
 
 /**
   * @brief  DeIntitalizes the HCSR04 Driver.
