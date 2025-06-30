@@ -2,7 +2,7 @@
  * hcsr_04.h
  *
  *  Created on: Jun 30, 2025
- *      Author: HAI
+ *      Author: Rosan Karthik
  */
 
 #ifndef INC_HCSR_04_H_
