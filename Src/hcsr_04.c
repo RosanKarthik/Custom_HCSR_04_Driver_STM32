@@ -2,8 +2,9 @@
  * hcsr_04.c
  *
  *  Created on: Jun 30, 2025
- *      Author: HAI
+ *      Author: Rosan Karthik
  */
+#include "hcsr_04.h"
 
 static void HCSR04_DelayUs(TIM_HandleTypeDef * tim, uint16_t us){
 	__HAL_TIM_SET_COUNTER(&tim,0);
